@@ -9,7 +9,7 @@ TEST_OBJS = test.o mm.o memlib.o
 all: mdriver
 
 mdriver: $(OBJS)
-	$(CC) $(CFLAGS) -o mdriver $(OBJS) -lm
+	$(CC) $(CFLAGS) -o code $(OBJS) -lm
 
 test: $(TEST_OBJS)
 	$(CC) $(CFLAGS) -o test $(TEST_OBJS) -lm
